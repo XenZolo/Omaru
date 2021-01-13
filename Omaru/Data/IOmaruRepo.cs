@@ -5,7 +5,7 @@ namespace Omaru.Data
 {
     public interface IOmaruRepo
     {
-        IEnumerable<Users> GetUsers();
+        IEnumerable<Users> GetAllUsers();
     }
 
 }

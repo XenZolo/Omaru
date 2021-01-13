@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using omaru.Data;
+using Omaru.Data;
 using Omaru.Models;
 
 namespace Omaru.Controllers
@@ -10,12 +10,19 @@ namespace Omaru.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly MockUsersRepo _repository = new MockUsersRepo();
+        private readonly IOmaruRepo _repository;
+
+        public UsersController(IOmaruRepo repository)
+        {
+            _repository = repository;
+         }
+
+        //private readonly MockUsersRepo _repository = new MockUsersRepo();
 
         [HttpGet]
         public ActionResult<IEnumerable<Users>> GetAllUsers()
         {
-            var userItems = _repository.GetUsers();
+            var userItems = _repository.GetAllUsers();
 
             return Ok(userItems);
         }

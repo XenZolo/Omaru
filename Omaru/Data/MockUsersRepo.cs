@@ -6,7 +6,7 @@ namespace omaru.Data
 {
     public class MockUsersRepo : IOmaruRepo
     {
-        public IEnumerable<Users> GetUsers()
+        public IEnumerable<Users> GetAllUsers()
         {
             var Users = new List<Users>
             {
