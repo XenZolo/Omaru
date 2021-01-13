@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+
+    <div class="card-header card-header-primary">
+        @*<button class="btn btn-primary float-le><a href="/Admin/AddProducts">Add Products</a></button>*@
+        <a href="AddProducts" class="btn btn-primary" style="float:right;">Add Products</a>
+        <h4 class="card-title "> Product List</h4>
+
+        <p class="card-category"> Here is a subtitle for this table</p>
+
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3">
+            
+                        <img src="/material-dashboard-master/assets/img/product4.png" style="height:50%; width:50%; margin-left:25%;" class="img-thumbnail" alt="Product Img" />                 
+                        <p class="text-center font-weight-bolder">Organic Honey</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

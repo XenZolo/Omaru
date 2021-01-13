@@ -1,0 +1,162 @@
+﻿
+@{
+    ViewData["Title"] = "Billing";
+    Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
+}
+
+<div class="card">
+
+    <div class="card-header card-header-primary">
+        @*<a href="#" class="btn btn-primary float-right">Add Products</a>*@
+        <h4 class="card-title "> INVOICE</h4>
+
+        <p class="card-category"> Omaru Farm Products</p>
+
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="col-form-label" style="color:black; font-size:16px">Invoice No</label>
+                            <input type="text" class="form-control" name="invNo" value="" />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="col-form-label" style="color:black; font-size:15px">Date Issued</label>
+                            <input type="text" class="form-control" name="invDate" value="" />
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-4" style="margin:10px; margin-left:unset;">
+                            <p class="text-primary" style="font-size:25px;">INVOICE</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label class="col-form-label" style="color:black; font-size:15px">Customer Name</label>
+                            <input type="text" class="form-control" name="cName" value="" />
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label class="col-form-label" style="color:black; font-size:15px">Customer Phone No</label>
+                            <input type="text" class="form-control" name="cPhoneNum" value="" />
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <form method="post">
+                            <div class="col-md-3">
+                                <label class="col-form-label" style="color:black;">Product Name</label>
+                                <input type="text" class="form-control" name="pName" id="pName" value="" />
+
+                            </div>
+                            <div class="col-md-3">
+                                <label class="col-form-label" style="color:black;">Quantity</label>
+                                <input type="text" class="form-control" name="pQuan" id="pQuan" value="" />
+
+                            </div>
+                            <div class="col-md-3">
+                                <label class="col-form-label" style="color:black;">Discount</label>
+                                <input type="text" class="form-control" name="pDisc" value="" />
+
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-primary" id="add_item" type="button">Add</button>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row mt-4">
+
+                        <div class="col-md-12">
+                            <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="invoice_listing" class="table">
+                                        <thead class="text-primary">
+                                            <tr>
+                                                <th>
+                                                    Item
+                                                </th>
+                                                <th>
+                                                    Amount
+                                                </th>
+                                                <th>
+                                                    Total
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <button class="btn btn-primary" type="submit">SUBMIT</button>
+
+                            </div>
+
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+@*<script>
+    $('#add_item').click(function () {
+        $('#invoice_listing tbody')
+            .append(
+                "<tr><td>" + $('#pName').val() + "</td>" +
+                "<td>" + $('#pQuan').val() + "</td></tr>"
+            )
+    });
+    </script>*@
+@*
+<div class="col-md-12">
+    <label class="form-control">Input Product</label>
+</div>
+<div class="col-md-12">
+    <label class="bmd-label-floating">Product Name</label>
+    <input type="text" class="form-control" name="pName" value="" />
+</div>
+<div class="col-md-12 mt-3">
+    <label class="bmd-label-floating">Product Description</label>
+    <textarea class="form-control" name="pDescription"></textarea>
+</div>
+
+<div class="col-md-12 mt-3">
+    <label class="bmd-label-floating">Product Image</label>
+    <input type="file" name="fileToUpload" class="form-control form-file-upload" id="fileToUpload">
+
+</div>
+
+<div class="col-md-12 mt-3">
+    <label class="bmd-label-floating">Product Cost</label>
+    <input type="text" class="form-control" name="pCost" value="" />
+
+</div>
+<div class="col-md-12 mt-3">
+    <label class="bmd-label-floating">Product Selling Price</label>
+    <input type="text" class="form-control" name="pSellingPrice" value="" />
+
+</div>
+<div class="col-md-12 mt-3">
+    <label class="bmd-label-floating">Product Vat</label>
+    <input type="text" class="form-control" name="pVat" value="" />
+
+</div>
+<div class="col-md-12 mt-3">
+    <label class="bmd-label-floating">Product Tax</label>
+    <input type="text" class="form-control" name="pTax" value="" />
+
+</div>
+<div class="col-md-12 mt-3">
+    <label class="bmd-label-floating">Product GST</label>
+    <input type="text" class="form-control" name="pGST" value="" />
+
+</div>*@

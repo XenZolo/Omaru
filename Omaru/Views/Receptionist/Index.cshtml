@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
+}
+
+<div class="card">
+
+    <div class="card-header card-header-primary">
+        @*<button class="btn btn-primary float-le><a href="/Admin/AddProducts">Add Products</a></button>*@
+        <a href="/Receptionist/Billing" class="btn btn-primary" style="float:right;">Create Invoice</a>
+        <h4 class="card-title "> Invoice List</h4>
+
+        <p class="card-category"> Here is a subtitle for this table</p>
+
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead class=" text-primary">
+                    <tr>
+                        <th>
+                            Invoice ID
+                        </th>
+                        <th>
+                            Amount
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Customer
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                        <th>
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            #1D567
+                        </td>
+                        <td>
+                            $20.00
+                        </td>
+                        <td>
+                            2021/01/11
+                        </td>
+                        <td>
+                            Miguel Sans
+                        </td>
+                        <td class="text-primary">
+                            Paid
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+             
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
